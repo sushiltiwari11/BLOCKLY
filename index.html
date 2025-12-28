@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockly Custom Workflow</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/blockly/blockly.min.js"></script>
+    <script src="https://unpkg.com/blockly/javascript_compressed.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Custom Blockly Workflow</h1>
+        <div class="controls">
+            <button id="generateBtn">Generate Code</button>
+            <button id="runBtn">Run Code</button>
+            <button id="clearBtn">Clear Workspace</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="blocklyDiv"></div>
+
+        <aside class="sidebar">
+            <div class="panel">
+                <h3>Code Preview</h3>
+                <pre id="codePreview"><code>// JavaScript will appear here...</code></pre>
+            </div>
+            <div class="panel">
+                <h3>Execution Results</h3>
+                <div id="outputDisplay">Console results will show here...</div>
+            </div>
+        </aside>
+    </main>
+
+    <script src="js/blocks.js"></script>
+    <script src="js/generator.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
